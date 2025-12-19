@@ -166,7 +166,7 @@ export const Dashboard = () => {
                             <div className="flex flex-col sm:flex-row h-full">
                                 {/* Image Overlay/Container */}
                                 {blog.image && (
-                                    <div className="relative w-full sm:w-48 lg:w-64 h-48 sm:h-auto overflow-hidden bg-slate-100 flex-shrink-0">
+                                    <div className="relative w-full sm:w-48 lg:w-64 h-56 overflow-hidden bg-slate-100 flex-shrink-0">
                                         <img
                                             src={blog.image}
                                             alt={blog.title}
