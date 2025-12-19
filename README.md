@@ -8,16 +8,15 @@ A production-style Admin Dashboard for managing blog content, built with modern 
 ## 🛠️ Chosen Tasks
 
 ### 🧠 Brain Task: Schema Migration
-I selected **Schema Migration** to demonstrate a robust approach to data persistence. In a real-world application, data structures evolve. This implementation ensures that:
+I selected *Schema Migration* to demonstrate a robust approach to data persistence. In a real-world application, data structures evolve. This implementation ensures that:
 - Every time the application loads, it checks the current version of the stored data.
 - If the schema has changed (e.g., adding a new field like `updatedAt` to older records), a sequential migration process runs to update existing `localStorage` data without data loss or UI crashes.
-- **Logic Location**: `src/utils/migrations.js` and integrated into `BlogProvider`.
+- Logic Location: `src/utils/migrations.js` and integrated into `BlogProvider`.
 
 ### ⚡ Quick Logic Tasks
 I implemented multiple logic tasks to enhance UX:
-1.  **Persistent Pagination**: Page numbers and "Items per page" preferences are stored in `localStorage`. Users stay on the same page even after a hard refresh.
-2.  **Warn on Unsaved Changes**: The application monitors the "dirty" state of the creation/edit forms. If a user tries to leave with unsaved data, the browser warns them.
-3.  **Disable Save unless Changed**: In the Edit screen, the "Update" button remains disabled until a field is actually modified, preventing unnecessary API/Storage writes.
+  **Persistent Pagination**: Page numbers and "Items per page" preferences are stored in `localStorage`. Users stay on the same page even after a hard refresh.
+
 
 ---
 
@@ -42,12 +41,12 @@ src/
 ---
 
 ## 🎨 Design Approach (Cal.com Inspired)
-- **Aesthetics**: Follows a minimalist, high-contrast aesthetic. It uses sharp borders, subtle shadows, and a clean "Inter" typography stack.
-- **Responsiveness**: The dashboard is **fully mobile-responsive**. 
+- Aesthetics: Follows a minimalist, high-contrast aesthetic. It uses sharp borders, subtle shadows, and a clean "Inter" typography stack.
+- Responsiveness: The dashboard is **fully mobile-responsive**. 
     - The sidebar collapses into a floating minimalist menu on small screens.
     - Stats cards transition from a 4-column desktop grid to a 2-column mobile grid.
     - Blog list items stack vertically (image above text) on mobile to maintain readability.
-- **UX**: Uses glassmorphism for the navbar and smooth transitions for interactive elements.
+- UX: Uses glassmorphism for the navbar and smooth transitions for interactive elements.
 
 ---
 
@@ -93,5 +92,5 @@ src/
 - [x] Schema Migration Implementation.
 
 ---
-Developed by [Your Name]
+Developed by Md Salman Nasir
 ```
